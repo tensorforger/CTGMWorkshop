@@ -1,10 +1,10 @@
 .vscode/
 local_samples/
-experiments/
 
 # Weights
 FLUX.2-klein-4B/
 stable-diffusion-xl-base-1.0/
+trained_models/
 
 # Dataset
 coco2017/
