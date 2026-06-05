@@ -4,7 +4,24 @@ This is repository of development and training code of various continuos-time ge
 
 Treat the collection of notebooks as *workshop*, not as production training code. There might be bugs.
 
-## Latest experimet
+## Latest experimets
+
+*05.06.2026*: Trained a **Flow Matching** model with same architecture and same dataset as the diffusion model from the previous experiment.
+
+Found that it is:
+
+1) Starts to generate more or less understandable images much earlier during training
+2) Fully trained model creates more structurally correct images
+3) The prompt coherence is more accurate
+4) Much better in producing zero-shot images (combinations that were not presented in the dataset)
+
+Here is the visual comparison on some prompts:
+
+![comparison](assets/diffusion_flow_comparison.png)
+
+Examples of zero-shot generations:
+
+![comparison](assets/diffusion_flow_zero_shot_comparison.png)
 
 *03.06.2026*: Trained a base **117M** parameter diffusion model on the whole **COCO-2017** dataset.
 
