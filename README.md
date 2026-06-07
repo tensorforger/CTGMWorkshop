@@ -6,6 +6,20 @@ Treat the collection of notebooks as *workshop*, not as production training code
 
 ## Latest experimets
 
+*07.06.2026*: Performed one iteration of **Flow Rectification** of previously trained flow matching model.
+
+This is done by generating ~ 100K of noise-generation pairs with random prompts from dataset, large number of steps and cfg, 
+and then fine-tuning model on these pairs for ~10 epochs.
+
+This turns a flow matching model into true **Rectified Flow** model that has much straighter trajectories and can sample in much fewer steps
+without cfg. 
+
+![comparison](assets/flow_reflow_comparison.png)
+
+
+Also measured distance of the trajectory during sampling from the perfect line between initial and final state.
+![trajectories](assets/trajectories.png)
+
 *05.06.2026*: Trained a **Flow Matching** model with same architecture and same dataset as the diffusion model from the previous experiment.
 
 Found that it is:
