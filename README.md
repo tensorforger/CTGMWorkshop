@@ -6,6 +6,21 @@ Treat the collection of notebooks as *workshop*, not as production training code
 
 ## Latest experimets
 
+*13.06.2026*: Trained FlowUpscaler - a fast Flux.2 latent upscaling model.
+
+![comparison](https://raw.githubusercontent.com/tensorforger/tensorforger/main/assets/upscaler_comparison.png)
+
+* Upscales latents 2 times
+* Trains with flow distillation from **Flux.2-klien-4B** as a teacher
+* **59M** parameter Unet
+* Samples in one denoising step
+* Compute scales linearly with resolution, ~**0.00045** ms per one latent pixel
+
+[ComfyUI node for this model](https://github.com/tensorforger/comfyui-flow-upscaler)
+[Download weights](https://huggingface.co/TensorForger/FlowUpscaler)
+
+For training details and latency benchmark see `notebooks/flow_upscaler` in this repo.
+
 *07.06.2026*: Performed one iteration of **Flow Rectification** of previously trained flow matching model.
 
 This is done by generating ~ 100K of noise-generation pairs with random prompts from dataset, large number of steps and cfg, 

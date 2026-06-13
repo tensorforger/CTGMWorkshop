@@ -5,6 +5,7 @@ local_samples/
 FLUX.2-klein-4B/
 stable-diffusion-xl-base-1.0/
 trained_models/
+taef2.safetensors
 
 # Dataset
 coco2017/
