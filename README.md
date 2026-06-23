@@ -6,6 +6,14 @@ Treat the collection of notebooks as *workshop*, not as production training code
 
 ## Latest experimets
 
+*22.06.2026*: Experimenting with FlowRefractor - a fast edit propagation model
+
+* Tried 19 architectures
+* Tried AutoResearch (see `program.md` and `report.md`)
+* Trained a larger 150M parameter model
+
+Conclusion: video to video dataset is probably absolutely required for this task. Optical flow tricks and hacks are the bottleneck.
+
 *13.06.2026*: Trained FlowUpscaler - a fast Flux.2 latent upscaling model.
 
 ![comparison](https://raw.githubusercontent.com/tensorforger/tensorforger/main/assets/upscaler_comparison.png)

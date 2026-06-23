@@ -5,10 +5,12 @@ local_samples/
 FLUX.2-klein-4B/
 stable-diffusion-xl-base-1.0/
 trained_models/
+trained_loras/
 taef2.safetensors
 
 # Dataset
 coco2017/
+lvd-2m/
 
 # Generations
 samples/
